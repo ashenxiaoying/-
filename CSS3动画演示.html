@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css3动画</title>
+    <style>
+        div{width: 100px;height: 50px;background: red;position: relative;animation: mymove 3s;
+            text-align: center;
+        color: aqua;-moz-animation: mymove 3s infinite;-webkit-animation: mymove 3s infinite;
+    -o-animation: mymove 3s infinite;}
+    @keyframes mymove {from,0%{
+        left:0px; background: rebeccapurple;top: 0px;
+    }
+    50%{
+        left: 100px;background: gold;top: 0px;
+    }
+    to,100%{
+        left: 200px;background: rgb(18, 18, 164);top: 0px;
+    }        
+    }
+    @-webkit-keyframes mymove{
+        from,0%{left: 0px;background: navy;top: 0px;}
+        50%{left: 100px;background: hotpink;top: 0px;}
+        to,100%{left: 200px;background: lawngreen;top: 0px;}
+    }
+    @-moz-keyframes mymove{
+        from,0%{left: 0px;background: fuchsia;top: 0px;}
+        50%{left: 100px;background: darkcyan;top: 0px;}
+        to,100%{left: 200px;background: salmon;top: 0px;}
+    }
+    @-o-keyframes mymove{
+        from,0%{left: 0px;background: darkmagenta;top: 0px;}
+        50%{left: 100px;background: rebeccapurple;top: 0px;}
+        to,100%{left: 200px;background: coral;top: 0px;}
+    }
+    </style>
+</head>
+<body>
+    <h3>Css3动画沿着矩形对角线运动</h3>
+    <div >我在运动！</div>
+    
+</body>
+</html>
